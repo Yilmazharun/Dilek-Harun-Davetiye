@@ -433,8 +433,6 @@ body.ovl .sc{overflow:hidden}
 .lb-n{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:64px;border:0;background:rgba(255,248,238,.12);color:#FFF8EE;font-size:2.2rem;cursor:pointer;border-radius:6px}
 .lb-n[hidden]{display:none}
 .lb-p{left:8px}.lb-nx{right:8px}
-@media (max-height:740px){#s6 .deco{display:none}}
-@media (max-height:700px){#s6 .agrid .ai:nth-child(n+4){display:none}#s6 .alb-t{margin-bottom:.6rem}}
 
 /* ═════ MOBİL UYUM ═════ */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -635,16 +633,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     </svg>
   </div>
   <div class="inn">
-    <div class="eye">Ortak Albüm</div>
+    <div class="eye">Fotoğraflar</div>
     <h2 class="sh">Anılarınızı Paylaşın</h2>
     <img class="k-div" src="data:image/webp;base64,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" alt="">
-    <p class="alb-t">Düğünde çektiğiniz fotoğrafları buraya yükleyin, herkes görebilsin.</p>
-    <div class="upn"><input type="text" id="upN" placeholder="Adınız (isteğe bağlı)" maxlength="40" autocomplete="name"></div>
-    <label class="bgold up-btn"><input type="file" id="fi" accept="image/*" multiple><span class="up-t">📷 Fotoğraf Yükle</span></label>
-    <div class="uprog" id="uprog" role="status" aria-live="polite"></div>
-    <div class="agrid" id="agrid"></div>
-    <div class="aempty" id="aempty">Henüz fotoğraf yok — ilk siz ekleyin! ✦</div>
-    <button type="button" class="amore" id="amore" hidden></button>
+    <p class="alb-t">Düğünde çektiğiniz fotoğrafları bize WhatsApp'tan gönderin, anılarımızı birlikte biriktirelim.</p>
+    <a class="bgold wa-photo" id="waPhoto" href="#" target="_blank" rel="noopener"><span class="up-t">📷 Fotoğraf Gönder</span></a>
   </div>
   <div class="sarr" onclick="gTo(6)"><div class="ch"></div><div class="ch"></div><div class="ch"></div></div>
 </div>
@@ -679,16 +672,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
 
 </div><!-- /sc -->
-<div class="gal" id="gal" hidden role="dialog" aria-modal="true" aria-labelledby="galT">
-  <div class="gal-h"><h2 id="galT" class="gal-t">Tüm Fotoğraflar</h2><button type="button" class="x-btn" id="galX" aria-label="Kapat">✕</button></div>
-  <div class="gal-g" id="galG"></div>
-</div>
-<div class="lb" id="lb" hidden role="dialog" aria-modal="true">
-  <button type="button" class="x-btn lb-x" id="lbX" aria-label="Kapat">✕</button>
-  <button type="button" class="lb-n lb-p" id="lbP" aria-label="Önceki">‹</button>
-  <figure class="lb-f"><img id="lbI" alt="" referrerpolicy="no-referrer"><figcaption id="lbC"></figcaption></figure>
-  <button type="button" class="lb-n lb-nx" id="lbN" aria-label="Sonraki">›</button>
-</div>
+
 
 
 <!-- DOT NAV -->
@@ -761,85 +745,7 @@ function doRsvp(){
   window.open(url,'_blank','noopener');
 }
 
-// ═══ ORTAK ALBÜM (Google Drive) ═══
-// Google Apps Script "Web uygulaması" adresini buraya yapıştırın (…/exec ile biter)
-const PHOTO_API='';
-let photos=[],lbIdx=0;
-const $=id=>document.getElementById(id);
-function pSrc(p,w){return p.local||('https://drive.google.com/thumbnail?id='+encodeURIComponent(p.id)+'&sz=w'+w);}
-function upStatus(t,err){const s=$('uprog');s.textContent=t;s.style.display=t?'block':'none';s.classList.toggle('err',!!err);}
-function tile(p,i){
-  const d=document.createElement('button');d.type='button';d.className='ai';d.setAttribute('aria-label',(p.name||'')+' — '+tt('fotoğrafı aç','open photo'));
-  const im=document.createElement('img');im.loading='lazy';im.referrerPolicy='no-referrer';im.alt='';im.src=pSrc(p,500);
-  const c=document.createElement('span');c.className='acap';c.textContent=p.name||'';
-  d.append(im,c);d.onclick=()=>openLb(i);return d;
-}
-function renderAlbum(){
-  const g=$('agrid'),e=$('aempty'),m=$('amore');
-  g.replaceChildren(...photos.slice(0,6).map(tile));
-  e.style.display=photos.length?'none':'block';
-  m.hidden=photos.length<=3;
-  m.textContent=tt('Tüm fotoğrafları gör','See all photos')+' ('+photos.length+')';
-  if(!$('gal').hidden)renderGal();
-}
-function renderGal(){$('galG').replaceChildren(...photos.map(tile));}
-async function loadPhotos(){
-  if(!PHOTO_API){renderAlbum();return;}
-  try{
-    const r=await fetch(PHOTO_API+'?t='+Date.now());const j=await r.json();
-    if(j.ok){const pending=photos.filter(p=>p.local&&!p.id);photos=pending.concat(j.photos);renderAlbum();}
-  }catch(e){}
-}
-function toJpeg(file){
-  return new Promise((res,rej)=>{
-    const url=URL.createObjectURL(file),img=new Image();
-    img.onload=()=>{
-      const max=1600,s=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight));
-      const c=document.createElement('canvas');c.width=Math.round(img.naturalWidth*s);c.height=Math.round(img.naturalHeight*s);
-      c.getContext('2d').drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(url);res(c.toDataURL('image/jpeg',0.82));
-    };
-    img.onerror=()=>{URL.revokeObjectURL(url);rej(new Error('decode'));};
-    img.src=url;
-  });
-}
-async function hFiles(list){
-  const files=[...list];$('fi').value='';
-  if(!files.length)return;
-  if(!PHOTO_API){upStatus(tt('Fotoğraf yükleme çok yakında açılacak.','Photo upload opens very soon.'),true);return;}
-  const nm=($('upN').value.trim()||tt('Misafir','Guest')).slice(0,40);
-  let ok=0,bad=0;
-  for(let i=0;i<files.length;i++){
-    upStatus(tt('Yükleniyor ','Uploading ')+(i+1)+' / '+files.length+'…');
-    let item=null;
-    try{
-      const data=await toJpeg(files[i]);
-      item={local:data,name:nm,id:null};photos.unshift(item);renderAlbum();
-      const r=await fetch(PHOTO_API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({name:nm,data:data.split(',')[1]})});
-      const j=await r.json();if(!j.ok)throw new Error(j.error||'upload');
-      item.id=j.id;ok++;
-    }catch(e){bad++;if(item){photos=photos.filter(p=>p!==item);renderAlbum();}}
-  }
-  if(bad) upStatus(ok+tt(' fotoğraf eklendi, ',' added, ')+bad+tt(' fotoğraf yüklenemedi. Tekrar deneyin.',' failed. Please try again.'),true);
-  else {upStatus(ok+tt(' fotoğraf eklendi ✓ Teşekkürler!',' photo(s) added ✓ Thank you!'));setTimeout(()=>upStatus(''),4000);}
-}
-$('fi').addEventListener('change',e=>hFiles(e.target.files));
-// tüm fotoğraflar
-$('amore').onclick=()=>{renderGal();$('gal').hidden=false;document.body.classList.add('ovl');$('galX').focus();};
-$('galX').onclick=()=>{$('gal').hidden=true;document.body.classList.remove('ovl');};
-// büyük görünüm
-function showLb(){const p=photos[lbIdx];if(!p)return;$('lbI').src=pSrc(p,1600);$('lbC').textContent=p.name||'';$('lbP').hidden=$('lbN').hidden=photos.length<2;}
-function openLb(i){lbIdx=i;showLb();$('lb').hidden=false;document.body.classList.add('ovl');$('lbX').focus();}
-function closeLb(){$('lb').hidden=true;$('lbI').removeAttribute('src');if($('gal').hidden)document.body.classList.remove('ovl');}
-function stepLb(d){lbIdx=(lbIdx+d+photos.length)%photos.length;showLb();}
-$('lbX').onclick=closeLb;$('lbP').onclick=()=>stepLb(-1);$('lbN').onclick=()=>stepLb(1);
-$('lb').addEventListener('click',e=>{if(e.target.id==='lb')closeLb();});
-document.addEventListener('keydown',e=>{
-  if(!$('lb').hidden){if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')stepLb(-1);if(e.key==='ArrowRight')stepLb(1);}
-  else if(!$('gal').hidden&&e.key==='Escape')$('galX').click();
-});
-let tx=null;$('lb').addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
-$('lb').addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)stepLb(dx<0?1:-1);tx=null;});
-loadPhotos();setInterval(()=>{if(!document.hidden)loadPhotos();},60000);
+document.getElementById('waPhoto').href=waUrl('📷 Dilek & Harun düğününden fotoğraflarımı gönderiyorum:');
 document.querySelectorAll('a[href^="https://wa.me/"]').forEach(x=>{if(!x.id)x.href='https://wa.me/'+WA_NUMBER});
 </script>
 
@@ -870,7 +776,7 @@ setTimeout(()=>{for(let i=0;i<5;i++) setTimeout(createPetal, i*400);}, 500);
 
 </script>
 <script>
-const I18N_EN={"Bu özel günümüzde sevincimizi sizlerle<br>paylaşmaktan mutluluk duyarız.": "It would be our joy to share<br>this special day with you.", "20 Ekim 2026": "October 20, 2026", "Horasan Belediyesi Düğün Salonu<br>Horasan / Erzurum": "Horasan Municipality Wedding Hall<br>Horasan / Erzurum", "Gelinin Ailesi": "Bride's Family", "Damadın Ailesi": "Groom's Family", "Programımız": "Our Schedule", "<span class=\"arw\">⟶</span>Kına Gecesi<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Henna Night<span class=\"arw r\">⟵</span>", "19 Ekim 2026 • Pazartesi": "Monday • October 19, 2026", "Saat 18:00 • 23:00": "6:00 PM – 11:00 PM", "Horasan Belediyesi Düğün Salonu<br>Adnan Menderes Mah., Horasan/Erzurum": "Horasan Municipality Wedding Hall<br>Adnan Menderes Mah., Horasan/Erzurum", "<span class=\"arw\">⟶</span>Gelin Alma<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Bride Pick-up<span class=\"arw r\">⟵</span>", "20 Ekim 2026 • Salı": "Tuesday • October 20, 2026", "Saat 10:00": "10:00 AM", "Hanemiz": "Our Family Home", "<span class=\"arw\">⟶</span>Yemek<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Lunch<span class=\"arw r\">⟵</span>", "Saat 12:00 • 13:00": "12:00 PM – 1:00 PM", "Dönerci Oktay Usta": "Dönerci Oktay Usta", "<span class=\"arw\">⟶</span>Düğün Töreni<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Wedding Ceremony<span class=\"arw r\">⟵</span>", "Saat 10:00 • 16:00": "10:00 AM – 4:00 PM", "Hikayemiz": "Our Story", "Aşkın Başlangıcı": "How It All Began", "Küçük bir şehirde, büyük bir kalpte yer açarak başladı her şey.": "It all began in a small town, when one big heart made room for another.", "\"Seninle her gün<br>yeni bir şiir\"": "\"Every day with you<br>is a new poem\"", "Şimdi o gülüşleri ömür boyu taşıma zamanı.": "Now it is time to carry those smiles for a lifetime.", "Geri Sayım": "Countdown", "Düğüne Kalan Süre": "Until Our Wedding", "Gün": "Days", "Saat": "Hours", "Dak.": "Min.", "Sn.": "Sec.", "20 Ekim 2026 · Horasan, Erzurum": "October 20, 2026 · Horasan, Erzurum", "Katılım Bildirimi": "RSVP", "Gelin Buluşalım": "Join Us", "En geç <strong style=\"color:#8A6828\">18 Ekim 2026</strong> tarihine kadar bildirmenizi rica ederiz.": "Kindly let us know by <strong style=\"color:#8A6828\">October 18, 2026</strong>.", "Hangi etkinliğe?": "Which event?", "💍 Her ikisine de": "💍 Both", "🌙 Sadece Kına Gecesi": "🌙 Henna Night only", "💒 Sadece Düğün": "💒 Wedding only", "Katılım durumu": "Will you attend?", "✅ Evet, katılacağım!": "✅ Yes, I'll be there!", "❌ Maalesef katılamayacağım": "❌ Sorry, I can't make it", "Katılımı Onayla": "Confirm Attendance", "✦ Teşekkürler!<br>Katılımınız kaydedildi.<br>Sizi görmek için sabırsızlanıyoruz! ✦": "✦ Thank you!<br>Your reply has been received.<br>We can't wait to see you! ✦", "Ortak Albüm": "Shared Album", "Anılarınızı Paylaşın": "Share Your Memories", "Düğünden çektiğiniz fotoğrafları paylaşın": "Share the photos you take at the wedding", "Fotoğraf seçmek için tıklayın": "Tap to choose photos", "Birden fazla seçebilirsiniz": "You can select more than one", "Henüz fotoğraf yok — ilk siz ekleyin! ✦": "No photos yet — be the first! ✦", "Konum": "Location", "Bize Ulaşın": "Find Us", "Horasan Belediyesi Düğün Salonu": "Horasan Municipality Wedding Hall", "Adnan Menderes Mahallesi<br>Horasan, Erzurum<br>Otopark mevcuttur · Erzurum'a 85 km": "Adnan Menderes Mahallesi<br>Horasan, Erzurum<br>Parking available · 85 km from Erzurum", "Haritada Göster": "Show on Map", "İletişim": "Contact", "WhatsApp ile yazın": "Message us on WhatsApp", "Tasarım: Dilek &amp; Harun": "Design: Dilek &amp; Harun", "✦ Teşekkürler!<br>Açılan WhatsApp mesajını gönderdiğinizde katılımınız bize ulaşır.": "✦ Thank you!<br>Just send the WhatsApp message that opens and your reply will reach us.", "WhatsApp'ı Aç": "Open WhatsApp", "Düğünde çektiğiniz fotoğrafları buraya yükleyin, herkes görebilsin.": "Upload the photos you take at the wedding so everyone can see them.", "📷 Fotoğraf Yükle": "📷 Upload Photos", "Tüm Fotoğraflar": "All Photos"};
+const I18N_EN={"Bu özel günümüzde sevincimizi sizlerle<br>paylaşmaktan mutluluk duyarız.": "It would be our joy to share<br>this special day with you.", "20 Ekim 2026": "October 20, 2026", "Horasan Belediyesi Düğün Salonu<br>Horasan / Erzurum": "Horasan Municipality Wedding Hall<br>Horasan / Erzurum", "Gelinin Ailesi": "Bride's Family", "Damadın Ailesi": "Groom's Family", "Programımız": "Our Schedule", "<span class=\"arw\">⟶</span>Kına Gecesi<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Henna Night<span class=\"arw r\">⟵</span>", "19 Ekim 2026 • Pazartesi": "Monday • October 19, 2026", "Saat 18:00 • 23:00": "6:00 PM – 11:00 PM", "Horasan Belediyesi Düğün Salonu<br>Adnan Menderes Mah., Horasan/Erzurum": "Horasan Municipality Wedding Hall<br>Adnan Menderes Mah., Horasan/Erzurum", "<span class=\"arw\">⟶</span>Gelin Alma<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Bride Pick-up<span class=\"arw r\">⟵</span>", "20 Ekim 2026 • Salı": "Tuesday • October 20, 2026", "Saat 10:00": "10:00 AM", "Hanemiz": "Our Family Home", "<span class=\"arw\">⟶</span>Yemek<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Lunch<span class=\"arw r\">⟵</span>", "Saat 12:00 • 13:00": "12:00 PM – 1:00 PM", "Dönerci Oktay Usta": "Dönerci Oktay Usta", "<span class=\"arw\">⟶</span>Düğün Töreni<span class=\"arw r\">⟵</span>": "<span class=\"arw\">⟶</span>Wedding Ceremony<span class=\"arw r\">⟵</span>", "Saat 10:00 • 16:00": "10:00 AM – 4:00 PM", "Hikayemiz": "Our Story", "Aşkın Başlangıcı": "How It All Began", "Küçük bir şehirde, büyük bir kalpte yer açarak başladı her şey.": "It all began in a small town, when one big heart made room for another.", "\"Seninle her gün<br>yeni bir şiir\"": "\"Every day with you<br>is a new poem\"", "Şimdi o gülüşleri ömür boyu taşıma zamanı.": "Now it is time to carry those smiles for a lifetime.", "Geri Sayım": "Countdown", "Düğüne Kalan Süre": "Until Our Wedding", "Gün": "Days", "Saat": "Hours", "Dak.": "Min.", "Sn.": "Sec.", "20 Ekim 2026 · Horasan, Erzurum": "October 20, 2026 · Horasan, Erzurum", "Katılım Bildirimi": "RSVP", "Gelin Buluşalım": "Join Us", "En geç <strong style=\"color:#8A6828\">18 Ekim 2026</strong> tarihine kadar bildirmenizi rica ederiz.": "Kindly let us know by <strong style=\"color:#8A6828\">October 18, 2026</strong>.", "Hangi etkinliğe?": "Which event?", "💍 Her ikisine de": "💍 Both", "🌙 Sadece Kına Gecesi": "🌙 Henna Night only", "💒 Sadece Düğün": "💒 Wedding only", "Katılım durumu": "Will you attend?", "✅ Evet, katılacağım!": "✅ Yes, I'll be there!", "❌ Maalesef katılamayacağım": "❌ Sorry, I can't make it", "Katılımı Onayla": "Confirm Attendance", "✦ Teşekkürler!<br>Katılımınız kaydedildi.<br>Sizi görmek için sabırsızlanıyoruz! ✦": "✦ Thank you!<br>Your reply has been received.<br>We can't wait to see you! ✦", "Anılarınızı Paylaşın": "Share Your Memories", "Düğünden çektiğiniz fotoğrafları paylaşın": "Share the photos you take at the wedding", "Fotoğraf seçmek için tıklayın": "Tap to choose photos", "Birden fazla seçebilirsiniz": "You can select more than one", "Henüz fotoğraf yok — ilk siz ekleyin! ✦": "No photos yet — be the first! ✦", "Konum": "Location", "Bize Ulaşın": "Find Us", "Horasan Belediyesi Düğün Salonu": "Horasan Municipality Wedding Hall", "Adnan Menderes Mahallesi<br>Horasan, Erzurum<br>Otopark mevcuttur · Erzurum'a 85 km": "Adnan Menderes Mahallesi<br>Horasan, Erzurum<br>Parking available · 85 km from Erzurum", "Haritada Göster": "Show on Map", "İletişim": "Contact", "WhatsApp ile yazın": "Message us on WhatsApp", "Tasarım: Dilek &amp; Harun": "Design: Dilek &amp; Harun", "✦ Teşekkürler!<br>Açılan WhatsApp mesajını gönderdiğinizde katılımınız bize ulaşır.": "✦ Thank you!<br>Just send the WhatsApp message that opens and your reply will reach us.", "WhatsApp'ı Aç": "Open WhatsApp", "Düğünde çektiğiniz fotoğrafları bize WhatsApp'tan gönderin, anılarımızı birlikte biriktirelim.": "Send us the photos you take at the wedding on WhatsApp, and let's collect our memories together.", "📷 Fotoğraf Gönder": "📷 Send Photos", "Fotoğraflar": "Photos"};
 const I18N_PH={"Adınız Soyadınız": "Your full name", "Telefon Numaranız": "Phone number", "Kaç kişi?": "Number of guests", "Adınız (isteğe bağlı)": "Your name (optional)"};
 let LANG='tr';
 function tt(tr,en){return LANG==='en'?en:tr}
@@ -888,7 +794,6 @@ function setLang(l){
   });
   document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.l===LANG)));
   try{localStorage.setItem('dh26_lang',LANG)}catch(e){}
-  if(typeof renderAlbum==='function')renderAlbum();
 }
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
 (function(){
